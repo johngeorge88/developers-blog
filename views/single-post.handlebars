@@ -1,6 +1,30 @@
 {{> post-info post}}
 
 {{#if loggedIn}}
+<div class="row comment-form">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <form class="comment-form">
+          <div class="form-group">
+            <textarea class="form-control" name="comment-body"></textarea>
+          </div>
+
+          <div>
+            <button class="btn btn-primary" type="submit">add comment</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+{{!-- 
 <form class="comment-form">
   <div>
     <textarea name="comment-body"></textarea>
@@ -9,7 +33,7 @@
   <div>
     <button type="submit">add comment</button>
   </div>
-</form>
+</form> --}}
 {{/if}}
 
 {{> comments post.comments}}
